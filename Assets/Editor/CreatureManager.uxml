@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label text="Manager Settings" display-tooltip-when-elided="true" />
+    <ui:SliderInt picking-mode="Ignore" label="Starting # of Creatures" value="1" high-value="10" binding-path="startingCreatures" />
+    <ui:SliderInt picking-mode="Ignore" label="Max # of Creatures" value="42" high-value="1" binding-path="maxCreatures" page-size="10" />
+    <uie:ObjectField label="Creature Prefab" binding-path="creaturePrefab" type="UnityEngine.GameObject, UnityEngine.CoreModule" />
+    <uie:PropertyField binding-path="creatures" label="Creatures" />
+</ui:UXML>
